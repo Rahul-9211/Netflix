@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import "./App.css";
+import Footer from "./Netflix/Footer";
+import Line from "./Netflix/Line";
+import Navbar from "./Netflix/Navbar";
+import Ques from "./Netflix/Ques";
+import SectionA from "./Netflix/SectionA";
+import SectionB from "./Netflix/SectionB";
+import SectionC from "./Netflix/SectionC";
+import SectionD from "./Netflix/SectionD";
+import SectionE from "./Netflix/SectionE";
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <SectionA/>
+      <Line/>
+      <SectionB/>
+      <Line/>
+      <SectionC/>
+      <Line/>
+      <SectionD/>
+      <Line/>
+      <SectionE/>
+      <Line/>
+      <Ques/>
+      <Line/>
+      <Footer/>
     </div>
   );
-}
+};
 
 export default App;
